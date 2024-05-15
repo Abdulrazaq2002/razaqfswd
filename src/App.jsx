@@ -9,7 +9,7 @@ import Education from "./pages/education";
 import Projects from "./pages/projects";
 export default function App() {
   return (
-    <Router>
+    <Router basename='/razaqfswd'>
       <Header />
       <Routes>
         <Route path='/razaqfswd' element={<Home />} />
