@@ -33,32 +33,32 @@ export default function Header() {
             active={isActive}
             className={`${linkCss} ${isActive === "home" ? active : ""}`}
             onClick={() => handleActive("home")}>
-            <Link to='/'>Home</Link>
+            <Link to='/razaqfswd'>Home</Link>
           </li>
           <li
             className={`${linkCss} ${isActive === "know" ? active : ""}`}
             onClick={() => handleActive("know")}>
-            <Link to='/know'>Know Me..</Link>
+            <Link to='/razaqfswd/know'>Know Me..</Link>
           </li>
           <li
             className={`${linkCss} ${isActive === "skill" ? active : ""}`}
             onClick={() => handleActive("skill")}>
-            <Link to='/skill'>Skills</Link>
+            <Link to='/razaqfswd/skill'>Skills</Link>
           </li>
           <li
             className={`${linkCss} ${isActive === "education" ? active : ""}`}
             onClick={() => handleActive("education")}>
-            <Link to='/education'>Education</Link>
+            <Link to='/razaqfswd/education'>Education</Link>
           </li>
           <li
             className={`${linkCss} ${isActive === "project" ? active : ""}`}
             onClick={() => handleActive("project")}>
-            <Link to='/project'>Project's</Link>
+            <Link to='/razaqfswd/project'>Project's</Link>
           </li>
           <li
             className={`${linkCss} ${isActive === "reach" ? active : ""}`}
             onClick={() => handleActive("reach")}>
-            <Link to='/reach'>Reach Out</Link>
+            <Link to='/razaqfswd/reach'>Reach Out</Link>
           </li>
         </ul>
         {/* Hamburger button */}
@@ -80,7 +80,7 @@ export default function Header() {
                 isActive === "home" ? MobileActive : ""
               }`}
               onClick={() => handleActive("home")}>
-              <Link onClick={handleClick} to='/'>
+              <Link onClick={handleClick} to='/razaqfswd'>
                 Home
               </Link>
             </li>
@@ -89,7 +89,7 @@ export default function Header() {
                 isActive === "know" ? MobileActive : ""
               }`}
               onClick={() => handleActive("know")}>
-              <Link onClick={handleClick} to='/know'>
+              <Link onClick={handleClick} to='/razaqfswd/know'>
                 Know me
               </Link>
             </li>
@@ -98,7 +98,7 @@ export default function Header() {
                 isActive === "skill" ? MobileActive : ""
               }`}
               onClick={() => handleActive("skill")}>
-              <Link onClick={handleClick} to='/skill'>
+              <Link onClick={handleClick} to='/razaqfswd/skill'>
                 Skills
               </Link>
             </li>
@@ -107,7 +107,7 @@ export default function Header() {
                 isActive === "education" ? MobileActive : ""
               }`}
               onClick={() => handleActive("education")}>
-              <Link onClick={handleClick} to='/education'>
+              <Link onClick={handleClick} to='/razaqfswd/education'>
                 Education
               </Link>
             </li>
@@ -116,7 +116,7 @@ export default function Header() {
                 isActive === "project" ? MobileActive : ""
               }`}
               onClick={() => handleActive("project")}>
-              <Link onClick={handleClick} to='/project'>
+              <Link onClick={handleClick} to='/razaqfswd/project'>
                 Project
               </Link>
             </li>
@@ -125,7 +125,7 @@ export default function Header() {
                 isActive === "reach" ? MobileActive : ""
               }`}
               onClick={() => handleActive("reach")}>
-              <Link onClick={handleClick} to='/reach'>
+              <Link onClick={handleClick} to='/razaqfswd/reach'>
                 Reach Out
               </Link>
             </li>
