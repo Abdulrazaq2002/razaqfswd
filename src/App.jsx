@@ -12,7 +12,7 @@ export default function App() {
     <Router basename='/razaqfswd'>
       <Header />
       <Routes>
-        <Route path='/razaqfswd' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/skill' element={<Skill />} />
         <Route path='/know' element={<About />} />
         <Route path='/reach' element={<Reach />} />
