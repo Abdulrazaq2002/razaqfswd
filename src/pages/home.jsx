@@ -5,6 +5,7 @@ import Linkedin from "../social/linkedin.png";
 import Git from "../social/github.png";
 import Brain from "../img/brain.png";
 import { Link } from "react-router-dom";
+
 export default function Home() {
   const roles = ["Front-End", "Back-End", "MERN"];
   const [selected, setSelected] = useState(0);
@@ -40,7 +41,7 @@ export default function Home() {
           setSelected((prev) => (prev + 1) % roles.length);
           setTypedText("");
           setTypingIndex(0);
-        }, 3000);
+        }, 2000);
       }
     }, 100);
 
@@ -48,8 +49,8 @@ export default function Home() {
   }, [selected, typingIndex]);
 
   return (
-    <div className='flex justify-center items-center mt-16 -ml-[15%] md:-ml-[16%]'>
-      <div className='flex flex-col justify-center text-left '>
+    <div className='flex justify-center items-center mt-16'>
+      <div className='flex flex-col justify-center text-left'>
         <Fade bottom>
           <h1 className='sm:text-6xl text-4xl font-bold mb-4'>Hey There,</h1>
         </Fade>
@@ -64,12 +65,12 @@ export default function Home() {
           </h3>
         </Slide>
         <Fade top>
-          <div className='items-center mt-3 '>
+          <div className='items-center mt-3'>
             <Link
               to='/skill'
               className={`${isActive === "skill" ? active : ""}`}
               onClick={() => handleActive("skill")}>
-              <h1 className=' flex justify-center rounded-2xl peer w-[50%] border-4  border-black p-3  text-center hover:text-gray-800 hover:bg-gray-100 hover:border-gray-800'>
+              <h1 className='flex justify-center rounded-2xl peer w-[50%] border-4 border-black p-3 text-center hover:text-gray-800 hover:bg-gray-100 hover:border-gray-800'>
                 <b>Skills </b>
                 <img src={Brain} className='ml-5 mt-1 w-5 h-5' />
               </h1>

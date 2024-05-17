@@ -3,6 +3,7 @@ import { Fade } from "react-reveal";
 import Insta from "../social/instagram.png";
 import Linkedin from "../social/linkedin.png";
 import Git from "../social/github.png";
+import EmailIcon from "../social/email.png"; // Add an email icon image
 
 export default function Reach() {
   const email = "razaq.sharaaz@gmail.com";
@@ -23,14 +24,14 @@ export default function Reach() {
   };
 
   return (
-    <div className='items-center mt-10 sm:mt-20 sm:ml-[20%] sm:mr-[20%]'>
+    <div className='flex flex-col items-center mt-10 sm:mt-20 sm:mx-auto sm:w-[80%]'>
       <Fade top>
-        <h1 className='text-2xl sm:text-3xl items-center border-b-4 border-black'>
+        <h1 className='text-2xl sm:text-3xl border-b-4 border-black'>
           Get In Touch
         </h1>
       </Fade>
       <Fade bottom>
-        <p className='font-bold text-gray-700 text-sm sm:text-base'>
+        <p className='font-bold text-gray-700 text-sm sm:text-base mt-4 text-center'>
           My inbox is always open for you, whether you have a question, need
           assistance with work, or simply want to say hi. I'll do my best to get
           back to you.
@@ -39,12 +40,17 @@ export default function Reach() {
       <Fade top>
         <button
           onClick={handleClick}
-          className='items-center font-bold rounded-xl sm:p-2 w-32 mt-4 bg-black text-white hover:bg-gray-800'>
+          className='font-bold flex rounded-lg py-2 px-6 mt-4 bg-black text-white hover:bg-gray-800 focus:outline-none transition duration-300'>
+          <img
+            src={EmailIcon}
+            className=' bg-white object-cover w-7 h-6 mr-2'
+            alt='Email'
+          />
           Say Hi
         </button>
       </Fade>
       <Fade top>
-        <section className='flex gap-3 mt-5'>
+        <div className='flex gap-3 mt-5'>
           {Social.map((social, index) => (
             <a
               href={"https://" + social.name}
@@ -52,14 +58,13 @@ export default function Reach() {
               target='_blank'
               rel='noopener noreferrer'>
               <img
-                key={index}
                 src={social.img}
                 alt=''
                 className='rounded-full w-12 h-12 hover:w-12 hover:h-12 transition-transform duration-300 transform hover:rotate-45'
               />
             </a>
           ))}
-        </section>
+        </div>
       </Fade>
     </div>
   );

@@ -12,58 +12,56 @@ import CL from "../img/c.png";
 import Cpp from "../img/c++.png";
 import Mdb from "../img/mongodb.png";
 import FB from "../img/firebase.png";
+import TP from "../img/tally.png";
 import Dev from "../img/dev.png";
 import { Fade } from "react-reveal";
 
 const skillIcons = [
-  { img: Html, title: "Html" },
+  { img: Html, title: "HTML" },
   { img: Css, title: "CSS" },
   { img: Js, title: "JavaScript" },
   { img: Ty, title: "TypeScript" },
-  { img: Tw, title: "TailWind" },
-  { img: Rjs, title: "ReactJs" },
+  { img: Tw, title: "Tailwind CSS" },
+  { img: Rjs, title: "React.js" },
   { img: Vite, title: "Vite" },
-  { img: Njs, title: "NodeJs" },
-  { img: Ejs, title: "ExpressJs" },
-  { img: Mdb, title: "MongoDb" },
+  { img: Njs, title: "Node.js" },
+  { img: Ejs, title: "Express.js" },
+  { img: Mdb, title: "MongoDB" },
   { img: FB, title: "Firebase" },
   { img: CL, title: "C" },
   { img: Cpp, title: "C++" },
+  { img: TP, title: "Tally" },
 ];
 
 export default function Skill() {
   return (
-    <>
-      <div className=' bg-gradient-to-r from-purple-500 to-indigo-500'>
-        <div className='flex justify-center items-center '>
-          <img
-            src={Dev}
-            className='sm:w-20 sm:mt-14 sm:h-20 w-14 rounded-full '
-            alt='Developer Icon'
-          />
-          <h1 className='sm:text-5xl sm:mt-14 text-4xl font-bold text-white underline'>
-            Skills & <span className='text-yellow-300'>Abilities</span>
-          </h1>
-        </div>
-        <section className='flex justify-center items-center px-4 py-16'>
-          <div className='grid grid-cols-2 md:grid-cols-3 gap-8 '>
-            {skillIcons.map((icon, index) => (
-              <Fade key={index} bottom cascade>
-                <div className='skill-card group text-center bg-black shadow-md rounded-lg overflow-hidden'>
-                  <img
-                    src={icon.img}
-                    alt={`Skill ${index + 1}`}
-                    className='w-full mt-1 h-40 object-contain transition duration-300 group-hover:scale-110'
-                  />
-                  <p className='text-xl bg-black text-white font-medium py-4 px-2'>
-                    {icon.title}
-                  </p>
-                </div>
-              </Fade>
-            ))}
-          </div>
-        </section>
+    <div className='bg-gradient-to-r from-purple-500 to-indigo-500 min-h-screen flex flex-col justify-center items-center'>
+      <div className='flex justify-center items-center mt-14'>
+        <img
+          src={Dev}
+          className='w-20  h-20 rounded-full'
+          alt='Developer Icon'
+        />
+        <h1 className='text-4xl md:text-5xl font-bold text-white border-b-4 border-yellow-400'>
+          Skills & <span className='text-yellow-300'>Abilities</span>
+        </h1>
       </div>
-    </>
+      <section className='grid grid-cols-2 md:grid-cols-4 gap-8 px-4 py-16'>
+        {skillIcons.map((icon, index) => (
+          <Fade key={index} bottom cascade>
+            <div className='group text-center bg-gray-900 hover:bg-gray-800 shadow-md rounded-lg overflow-hidden'>
+              <img
+                src={icon.img}
+                alt={`Skill ${index + 1}`}
+                className='w-full h-40 object-contain transition duration-300 group-hover:scale-105'
+              />
+              <p className='text-xl text-white font-medium py-4'>
+                {icon.title}
+              </p>
+            </div>
+          </Fade>
+        ))}
+      </section>
+    </div>
   );
 }
