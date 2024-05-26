@@ -24,46 +24,50 @@ export default function Reach() {
   };
 
   return (
-    <div className='flex flex-col items-center mt-10 sm:mt-20 sm:mx-auto sm:w-[80%]'>
-      <Fade top>
-        <h1 className='text-2xl sm:text-3xl border-b-4 border-black'>
-          Get In Touch
-        </h1>
-      </Fade>
+    <div className=' bg-charcol h-auto'>
+      <footer className=' block sm:flex justify-evenly p-5'>
+        <div className='sm:w-[50%]'>
+          <Fade top>
+            <h1 className='text-4xl mb-4 font-bold text-white'>REACH OUT</h1>
+          </Fade>
+          <Fade bottom>
+            <p className='text-left text-white mb-8'>
+              My inbox is always open for you, whether you have a question, need
+              assistance with work, or simply want to say hi. I'll do my best to
+              get back to you.
+            </p>
+          </Fade>
+        </div>
+        <div className=''>
+          <Fade top>
+            <p
+              onClick={handleClick}
+              className='flex items-center rounded-xl w-36 h-auto p-4 bg-white text-charcol hover:bg-gray-300 transition duration-300 mb-8'>
+              <b>Say Hi, Email</b>
+            </p>
+          </Fade>
+          <Fade top>
+            <div className='flex gap-6 mb-8'>
+              {Social.map((social, index) => (
+                <a
+                  href={"https://" + social.name}
+                  key={index}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='transform transition-transform hover:scale-125'>
+                  <img src={social.img} alt={social.name} className='w-8 h-8' />
+                </a>
+              ))}
+            </div>
+          </Fade>
+        </div>
+      </footer>
       <Fade bottom>
-        <p className='font-bold text-gray-700 text-sm sm:text-base mt-4 text-center'>
-          My inbox is always open for you, whether you have a question, need
-          assistance with work, or simply want to say hi. I'll do my best to get
-          back to you.
-        </p>
-      </Fade>
-      <Fade top>
-        <button
-          onClick={handleClick}
-          className='font-bold flex rounded-lg py-2 px-6 mt-4 bg-black text-white hover:bg-gray-800 focus:outline-none transition duration-300'>
-          <img
-            src={EmailIcon}
-            className=' bg-white object-cover w-7 h-6 mr-2'
-            alt='Email'
-          />
-          Say Hi
-        </button>
-      </Fade>
-      <Fade top>
-        <div className='flex gap-3 mt-5'>
-          {Social.map((social, index) => (
-            <a
-              href={"https://" + social.name}
-              key={index}
-              target='_blank'
-              rel='noopener noreferrer'>
-              <img
-                src={social.img}
-                alt=''
-                className='rounded-full w-12 h-12 hover:w-12 hover:h-12 transition-transform duration-300 transform hover:rotate-45'
-              />
-            </a>
-          ))}
+        <hr />
+        <div className='flex justify-center'>
+          <p className='text-sm mt-4 text-white items-center'>
+            &copy; 2024 Abdul Razaq. All rights reserved.
+          </p>
         </div>
       </Fade>
     </div>

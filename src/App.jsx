@@ -13,11 +13,11 @@ export default function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/skill' element={<Skill />} />
+        {/* <Route path='/skill' element={<Skill />} />
         <Route path='/know' element={<About />} />
         <Route path='/reach' element={<Reach />} />
         <Route path='/education' element={<Education />} />
-        <Route path='/project' element={<Projects />} />
+        <Route path='/project' element={<Projects />} /> */}
       </Routes>
     </Router>
   );
