@@ -15,7 +15,7 @@ export default function Reach() {
     { img: Git, name: "github.com/Abdulrazaq2002" },
     {
       img: Linkedin,
-      name: "www.linkedin.com/in/abdul-razaq-a89038287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      name: "www.linkedin.com/in/abdul-razaq-a89038287/",
     },
   ];
 
