@@ -39,7 +39,7 @@ export default function Skill() {
     <div className='bg-gray-100 min-h-screen flex flex-col justify-center items-center'>
       <div className='flex justify-center items-center mt-14'>
         <h1 className='text-4xl md:text-5xl font-bold text-charcol border-b-2 border-charcol'>
-          Skills & Abilities
+          SKILLS & ABILITIES
         </h1>
       </div>
       <section className='grid grid-cols-3 md:grid-cols-4 gap-8 px-4 py-16'>

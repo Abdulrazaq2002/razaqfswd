@@ -19,7 +19,7 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
-      const scrollPosition = window.scrollY + 80;
+      const scrollPosition = window.scrollY + 10;
 
       sections.forEach((section) => {
         if (

@@ -3,7 +3,6 @@ import Index from "./index";
 import About from "./about";
 import Projects from "./projects";
 import Skill from "./skill";
-import { Slide } from "react-reveal";
 import Education from "./education";
 import Reach from "./reach";
 
@@ -21,7 +20,7 @@ export default function Home() {
         ref={indexRef}
         id='home'
         className='border-b-2 border-charcol border-opacity-10'>
-        <Index />
+        <Index projectRef={projectRef} />
       </div>
       <div
         ref={aboutRef}

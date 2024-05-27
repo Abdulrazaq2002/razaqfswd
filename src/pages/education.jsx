@@ -56,7 +56,7 @@ export default function Education() {
     <div className='min-h-screen'>
       <div className='sm:py-14 py-5'>
         <div className='max-w-6xl mx-auto flex justify-center items-center'>
-          <h1 className='text-3xl border-b-4 border-charcol sm:text-4xl font-bold text-charcol'>
+          <h1 className='text-2xl sm:text-3xl border-b-4 border-charcol sm:text-4xl font-bold text-charcol'>
             EDUCATION & CERTIFICATION
           </h1>
         </div>

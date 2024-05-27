@@ -57,7 +57,7 @@ export default function Projects() {
     <div className='bg-gary-200 min-h-screen  '>
       <div className='flex flex-row items-center justify-center py-8'>
         <h1 className='text-3xl sm:text-4xl font-bold text-charcol border-b-4 border-charcol'>
-          My Projects
+          MY PROJECTS
         </h1>
       </div>
       <div className='flex flex-wrap justify-center'>
